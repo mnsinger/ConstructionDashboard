@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://java.sun.com/xml/ns/javaee" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd" version="3.0">
+  <display-name>FantasyBasketball</display-name>
+  <welcome-file-list>
+    <welcome-file>login.html</welcome-file>
+  </welcome-file-list>
+  <servlet>
+    <servlet-name>constructiondashboard</servlet-name>
+    <servlet-class>
+            org.springframework.web.servlet.DispatcherServlet
+        </servlet-class>
+    <load-on-startup>1</load-on-startup>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>constructiondashboard</servlet-name>
+    <url-pattern>/welcome.jsp</url-pattern>
+    <url-pattern>/welcome.html</url-pattern>
+    <url-pattern>/goodbye.jsp</url-pattern>
+    <url-pattern>/goodbye.html</url-pattern>
+    <url-pattern>/login.jsp</url-pattern>
+    <url-pattern>/login.html</url-pattern>
+    <url-pattern>/faq.jsp</url-pattern>
+    <url-pattern>/faq.html</url-pattern>
+    <url-pattern>/dashboard.jsp</url-pattern>
+    <url-pattern>/dashboard.html</url-pattern>
+    <url-pattern>/tabProject.jsp</url-pattern>
+    <url-pattern>/tabProject.html</url-pattern>
+    <url-pattern>/getProject</url-pattern>
+    <url-pattern>/getProjects</url-pattern>
+    <url-pattern>/getPms</url-pattern>
+    <url-pattern>/getPmDetail</url-pattern>
+    <url-pattern>/getVendorsPrime</url-pattern>
+    <url-pattern>/getVendorPrimeDetail</url-pattern>
+    <url-pattern>/getVendorsSub</url-pattern>
+    <url-pattern>/getVendorSubDetail</url-pattern>
+    <url-pattern>*.html</url-pattern>
+  </servlet-mapping>
+</web-app>
