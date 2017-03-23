@@ -1,0 +1,64 @@
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:mvc="http://www.springframework.org/schema/mvc" xmlns:context="http://www.springframework.org/schema/context"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="
+        http://www.springframework.org/schema/beans     
+        http://www.springframework.org/schema/beans/spring-beans.xsd
+        http://www.springframework.org/schema/mvc 
+        http://www.springframework.org/schema/mvc/spring-mvc.xsd
+        http://www.springframework.org/schema/context 
+        http://www.springframework.org/schema/context/spring-context.xsd">
+ 
+	<context:component-scan base-package="com.constructiondashboard.controller" />
+ 
+	<bean id="viewResolver"
+		class="org.springframework.web.servlet.view.InternalResourceViewResolver">
+		<property name="viewClass"
+			value="org.springframework.web.servlet.view.JstlView" />
+		<property name="prefix" value="/WEB-INF/jsp/" />
+		<property name="suffix" value=".jsp" />
+	</bean>
+	
+	<bean id="dataSource"
+		class="org.springframework.jdbc.datasource.DriverManagerDataSource">
+		<property name="driverClassName" value="com.mysql.jdbc.Driver" />
+		<!-- property name="url" value="jdbc:mysql://127.0.0.1:3306/nba" /-->
+		<property name="url" value="***" />
+		<property name="username" value="***" />
+		<property name="password" value="***" />
+	</bean>
+	
+	<bean id="DataDao" class="com.constructiondashboard.dao.DataDaoImpl">
+		<property name="dataSource" ref="dataSource" />
+	</bean>
+	
+	<bean id="loginDelegate" class="com.constructiondashboard.delegate.LoginDelegate">
+		<property name="userService" ref="userService"></property>
+	</bean>
+
+	<bean id="userService" class="com.constructiondashboard.service.UserServiceImpl">
+		<property name="userDao" ref="userDao"></property>
+	</bean>
+
+	<bean name="userDao" class="com.constructiondashboard.dao.UserDaoImpl">
+		<property name="dataSource" ref="dataSource"></property>
+	</bean>
+
+	<bean name="projectService" class="com.constructiondashboard.service.ProjectService">
+	</bean>
+	
+	<bean name="pmService" class="com.constructiondashboard.service.PmService">
+	</bean>
+	
+	<bean name="vendorsPrimeService" class="com.constructiondashboard.service.VendorsPrimeService">
+	</bean>
+	
+	<bean name="vendorsSubService" class="com.constructiondashboard.service.VendorsSubService">
+	</bean>
+	
+	<!-- Handles HTTP GET requests for /resources/** by efficiently serving up static resources in the ${webappRoot}/resources directory >
+	<mvc:resources mapping="/CSS/**" location="/CSS/" />
+	<mvc:resources mapping="/JS/**" location="/JS/" />
+	<mvc:resources mapping="/images/**" location="/images/" /-->	
+ 
+</beans>
