@@ -3,6 +3,9 @@
 <head>
 
   <link rel="stylesheet" type="text/css" href="<%=request.getContextPath() %>/CSS/style.login.css" />
+  <link rel="icon" 
+      type="image/png" 
+      href="<%=request.getContextPath() %>/images/company.png">
   <script type="text/javascript" src="<%=request.getContextPath() %>/JS/jquery-2.1.4.min.js"></script>
   <script>
 

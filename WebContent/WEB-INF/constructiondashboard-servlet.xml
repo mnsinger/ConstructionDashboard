@@ -23,9 +23,9 @@
 		class="org.springframework.jdbc.datasource.DriverManagerDataSource">
 		<property name="driverClassName" value="com.mysql.jdbc.Driver" />
 		<!-- property name="url" value="jdbc:mysql://127.0.0.1:3306/nba" /-->
-		<property name="url" value="***" />
-		<property name="username" value="***" />
-		<property name="password" value="***" />
+		<property name="url" value="jdbc:mysql://ec2-52-41-13-6.us-west-2.compute.amazonaws.com:3306/dashboard" />
+		<property name="username" value="root" />
+		<property name="password" value="MNSing1" />
 	</bean>
 	
 	<bean id="DataDao" class="com.constructiondashboard.dao.DataDaoImpl">

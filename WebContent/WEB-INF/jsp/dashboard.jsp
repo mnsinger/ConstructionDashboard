@@ -583,7 +583,7 @@
 			window.location = window.location.href;
 	    });
 	    
-	    $( "#dd2-1" ).click(function() {
+	    $( ".under-construction" ).click(function() {
 	    	var label = "All Projects Report";
 		    addTab1(label);
 	        $('#menu2dd').hide();
@@ -673,7 +673,19 @@
 	
 		<ul id="menu2dd" role="menu" tabindex="0" class="ui-menu ui-widget ui-widget-content ui-menu-icons" aria-activedescendant="ui-id-08" style="margin-left: 207px;position:fixed;display:none;z-index:1;">
 		  <li class="ui-menu-item">
-		    <div id="dd2-1" tabindex="-1" role="menuitem" class="ui-menu-item-wrapper" style="text-indent:20px;"><span class="menu-item menu-item-5"></span>All Projects Report</div>
+		    <div id="dd2-1" tabindex="-1" role="menuitem" class="ui-menu-item-wrapper under-construction" style="text-indent:20px;"><span class="menu-item menu-item-5"></span>All Projects Report</div>
+		  </li>
+		  <li class="ui-menu-item">
+		    <div id="dd2-2" tabindex="-1" role="menuitem" class="ui-menu-item-wrapper under-construction" style="text-indent:20px;"><span class="menu-item menu-item-5"></span>Executive Report</div>
+		  </li>
+		  <li class="ui-menu-item">
+		    <div id="dd2-3" tabindex="-1" role="menuitem" class="ui-menu-item-wrapper under-construction" style="text-indent:20px;"><span class="menu-item menu-item-5"></span>FAR Funding Report</div>
+		  </li>
+		  <li class="ui-menu-item">
+		    <div id="dd2-4" tabindex="-1" role="menuitem" class="ui-menu-item-wrapper under-construction" style="text-indent:20px;"><span class="menu-item menu-item-5"></span>Change Order and Amendment Report</div>
+		  </li>
+		  <li class="ui-menu-item">
+		    <div id="dd2-5" tabindex="-1" role="menuitem" class="ui-menu-item-wrapper under-construction" style="text-indent:20px;"><span class="menu-item menu-item-5"></span>Vendor Commitment Summary</div>
 		  </li>
 		</ul> 
 	 	
