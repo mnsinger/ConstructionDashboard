@@ -2,6 +2,7 @@
 <html>
 <head>
 
+  <title>Construction Projects Dashboard</title>
   <link rel="stylesheet" type="text/css" href="<%=request.getContextPath() %>/CSS/style.login.css" />
   <link rel="icon" 
       type="image/png" 
