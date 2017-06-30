@@ -25,7 +25,7 @@
 		<!-- property name="url" value="jdbc:mysql://127.0.0.1:3306/nba" /-->
 		<property name="url" value="jdbc:mysql://ec2-52-41-13-6.us-west-2.compute.amazonaws.com:3306/dashboard" />
 		<property name="username" value="root" />
-		<property name="password" value="MNSing1" />
+		<property name="password" value="*****" />
 	</bean>
 	
 	<bean id="DataDao" class="com.constructiondashboard.dao.DataDaoImpl">
